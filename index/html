@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Freelance | Spécialiste Installation Site Complet</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icônes FontAwesome pour les décorations -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <nav class="navbar">
+        <div class="logo">Freelance<span>25</span></div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#formulaire">Commander</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil (Hero) -->
+    <header id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Nous sommes spécialisés dans l'<span>installation de sites complets</span></h1>
+            <p>Du design à la mise en ligne, nous livrons votre site clé en main, optimisé et prêt à l'emploi.</p>
+            <a href="#formulaire" class="btn btn-metal">Démarrer mon projet</a>
+        </div>
+    </header>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <h2>Nos Services Clé en Main</h2>
+        <div class="services-grid">
+            <div class="service-card card-metal">
+                <i class="fa-solid fa-laptop-code icon"></i>
+                <h3>Installation Complète</h3>
+                <p>Configuration de votre hébergement, du nom de domaine et déploiement de votre site de A à Z.</p>
+            </div>
+            <div class="service-card card-metal">
+                <i class="fa-solid fa-palette icon"></i>
+                <h3>Design & Décoration</h3>
+                <p>Un visuel moderne, épuré et entièrement adapté à l'image de votre entreprise.</p>
+            </div>
+            <div class="service-card card-metal">
+                <i class="fa-solid fa-shield-halved icon"></i>
+                <h3>Sécurité & Suivi</h3>
+                <p>Optimisation des performances et protocoles de sécurité pour un site rapide et protégé.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire de Commande -->
+    <section id="formulaire" class="form-section">
+        <div class="form-container">
+            <h2>Formulaire de Commande</h2>
+            <p class="subtitle">Remplissez les détails pour l'installation de votre site complet</p>
+            
+            <!-- Formulaire avec envoi automatique par Email (Formspree) -->
+            <form action="https://formspree.io" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom Complet</label>
+                    <input type="text" id="nom" name="Nom" placeholder="Ex: Robert Emanuel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Ex: service.freelance25@outlook.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="projet">Type de Site Souhaité</label>
+                    <select id="projet" name="Type de Projet" required>
+                        <option value="">-- Choisissez une option --</option>
+                        <option value="vitrine">Site Vitrine Professionnel</option>
+                        <option value="ecommerce">Boutique E-commerce</option>
+                        <option value="portfolio">Portfolio Freelance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Détails du projet</label>
+                    <textarea id="details" name="Détails du Projet" rows="4" placeholder="Décrivez le site à installer..." required></textarea>
+                </div>
+
+                <!-- Option de Paiement par Chèque -->
+                <div class="payment-method">
+                    <h3><i class="fa-solid fa-money-check-dollar"></i> Mode de paiement accepté</h3>
+                    <div class="cheque-box">
+                        <p><strong>Paiement par chèque bancaire uniquement.</strong></p>
+                        <p>L'ordre et l'adresse de réception vous seront envoyés par email dès la validation du formulaire.</p>
+                    </div>
+                </div>
+
+                <!-- Bouton Style Métal avec effet Brillant au clic/survol -->
+                <button type="submit" class="btn-submit btn-metal">Valider ma commande (Envoi automatique)</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 Freelance25 - Tous droits réservés. Spécialiste Installation Site Complet.</p>
+    </footer>
+
+</body>
+</html>
